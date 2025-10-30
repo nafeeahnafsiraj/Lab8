@@ -54,4 +54,15 @@ public class CustomListTest {
         list.deleteCity(city);
         assertEquals(false, list.hasCity(city));
     }
+
+    /**
+     * Tests whether countCities() correctly returns number of cities currently in the list.
+     */
+    @Test
+    public void countCitiesTest() {
+        list = MockCityList();
+        assertEquals(0, list.countCities());
+        list.addCity(new City("Vancouver", "British Columbia"));
+        assertEquals(1, list.countCities());
+    }
 }
