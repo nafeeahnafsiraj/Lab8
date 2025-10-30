@@ -31,6 +31,9 @@ public class CustomListTest {
         assertEquals(list.getCount(), listSize + 1);
     }
 
+    /**
+     * Tests whether hasCity() correctly identifies if a city is present in the list
+     */
     @Test
     public void hasCityTest() {
         list = MockCityList();
