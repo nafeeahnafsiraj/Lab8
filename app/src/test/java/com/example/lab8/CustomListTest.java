@@ -43,7 +43,7 @@ public class CustomListTest {
     }
 
     /**
-     * Tests whether delete() removes a city from the list correctly and the city count decreases accordingly
+     * Tests whether deleteCity() removes a city from the list correctly and the city count decreases accordingly
      */
     @Test
     public void deleteCityTest() {
